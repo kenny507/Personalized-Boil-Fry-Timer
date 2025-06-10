@@ -25,9 +25,9 @@ BOILING_INSTRUCTIONS = {
 FRYING_TIMES = {
     "Eggs Sunny Side": 3 * 60,
     "Bacon": 5 * 60,
-    "Fried Rice": 10 * 60,
-    "Pork Chops": 8 * 60,
-    "Tofu Cubes": 6 * 60
+    "Fried Rice": 4 * 60 +30,
+    "Pork Katsu": 6 * 60,
+    "Fish": 5 * 60
 }
 
 FRYING_IMAGES = {
@@ -35,7 +35,7 @@ FRYING_IMAGES = {
     "Bacon": "assets/fry_bacon.png",
     "Fried Rice": "assets/fry_rice.png",
     "Pork Chops": "assets/fry_porkchop.png",
-    "Tofu Cubes": "assets/fry_tofu.png"
+    "Fish": "assets/fry_fish.png"
 }
 
 FRYING_INSTRUCTIONS = {
@@ -43,5 +43,5 @@ FRYING_INSTRUCTIONS = {
     "Bacon": "Lay strips on cold pan. Turn heat to medium. Flip until crisp, ~5 mins.",
     "Fried Rice": "Heat oil, fry onion and garlic. Add rice and soy sauce. Stir-fry 10 mins.",
     "Pork Chops": "Season chops. Sear both sides in oil for ~4 mins each.",
-    "Tofu Cubes": "Press tofu, cube it. Pan fry in oil until golden, ~6 mins."
+    "Fish": ""
 }
