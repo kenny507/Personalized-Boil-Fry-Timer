@@ -42,7 +42,7 @@ class Timer:
 
     def _ring(self):
         try:
-            sound_path = os.path.join("assets", "timer_done.wav")
+            sound_path = os.path.join("assets", "timer_complete_music.wav")
             winsound.PlaySound(sound_path, winsound.SND_FILENAME | winsound.SND_ASYNC)
         except Exception as e:
             print(f"Failed to play sound: {e}")
