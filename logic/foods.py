@@ -43,5 +43,5 @@ FRYING_INSTRUCTIONS = {
     "Bacon": "Lay strips on cold pan. Turn heat to medium. Flip until crisp, ~5 mins.",
     "Fried Rice": "Heat oil, fry onion and garlic. Add rice and soy sauce. Stir-fry 10 mins.",
     "Pork Chops": "Season chops. Sear both sides in oil for ~4 mins each.",
-    "Fish": ""
+    "Fish": "After adding oil to pan, wait till temperature reaches 375 degrees and add fish on skin side first. Afterwards, flip at 2.5 minutes and allow remaining minutes on the other side. Enjoy!"
 }
