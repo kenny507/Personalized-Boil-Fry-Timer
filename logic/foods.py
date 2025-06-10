@@ -40,7 +40,7 @@ FRYING_IMAGES = {
 
 FRYING_INSTRUCTIONS = {
     "Eggs Sunny Side": "Heat pan with oil. Crack egg gently. Fry for 3 minutes to obtain golden brown crust on the bottom. Enjoy!",
-    "Bacon": "Lay strips on cold pan. Turn heat to medium. Flip until crisp, ~5 mins.",
+    "Bacon": "Lay strips on cold pan. Turn heat to medium and allow oils to melt from bacon. Continually flip every minute and a half or so until crispy meat and soft fats till timer ends. Enjoy!",
     "Fried Rice": "Heat oil, fry onion and garlic. Add rice and soy sauce. Stir-fry 10 mins.",
     "Pork Katsu": "After seasoning the pork and bread crumbs, add a small layer of oil at bottom of frying pan. After, put pork katsu into oil to fry for 3 minutes on each side with a oil temperature of 350 degrees. Enjoy! ",
     "Fish": "After adding oil to pan, wait till temperature reaches 375 degrees and add fish on skin side first. Afterwards, flip at 2.5 minutes and allow remaining minutes on the other side. Enjoy!"
