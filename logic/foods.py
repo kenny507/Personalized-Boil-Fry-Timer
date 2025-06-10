@@ -34,7 +34,7 @@ FRYING_IMAGES = {
     "Eggs Sunny Side": "assets/fry_eggs.png",
     "Bacon": "assets/fry_bacon.png",
     "Fried Rice": "assets/fry_rice.png",
-    "Pork Chops": "assets/fry_porkchop.png",
+    "Pork Katsu": "assets/fry_pork.png",
     "Fish": "assets/fry_fish.png"
 }
 
