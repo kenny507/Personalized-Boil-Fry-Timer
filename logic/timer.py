@@ -1,7 +1,16 @@
 import time
 import threading
 import winsound
-import os
+import os,sys
+
+
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except AttributeError:
+        base_path = os.path.abspath(".")
+    return os.path.join(base_path, relative_path)
+
 
 class Timer:
     def __init__(self, update_callback, done_callback):
@@ -42,7 +51,8 @@ class Timer:
 
     def _ring(self):
         try:
-            sound_path = os.path.join("assets", "timer_complete_music.wav")
+            sound_path = resource_path("assets/timer_complete_music.wav")
             winsound.PlaySound(sound_path, winsound.SND_FILENAME | winsound.SND_ASYNC)
         except Exception as e:
             print(f"Failed to play sound: {e}")
+

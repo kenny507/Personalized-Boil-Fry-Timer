@@ -4,6 +4,15 @@ from PIL import Image, ImageTk
 import random
 from logic.foods import BOILING_TIMES, BOILING_IMAGES, BOILING_INSTRUCTIONS, FRYING_TIMES, FRYING_IMAGES, FRYING_INSTRUCTIONS
 from logic.timer import Timer
+import sys, os
+
+
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except AttributeError:
+        base_path = os.path.abspath(".")
+    return os.path.join(base_path, relative_path)
 
 class BoilTimerApp:
     def __init__(self, root):
@@ -26,6 +35,7 @@ class BoilTimerApp:
         self.timer = Timer(self.update_timer_display, self.timer_done)
         self.create_widgets()
         self.set_mode("boiling")  # Initialize with boiling mode
+
 
     def create_widgets(self):
         font_label = ("Segoe UI", 12)
@@ -89,11 +99,8 @@ class BoilTimerApp:
                                          bg="#ffe6ea", fg="#444444", font=("Segoe UI", 10))
         self.instruction_text.pack(anchor="nw", pady=5)
         try:
-            from PIL import Image, ImageTk
-            import os
-
             icon_path = os.path.join("assets", "corner_icon.png")
-            icon_img = Image.open(icon_path).resize((64, 64))
+            icon_img = Image.open(resource_path(icon_path)).resize((64, 64))
             self.corner_icon = ImageTk.PhotoImage(icon_img)
             self.icon_label = tk.Label(self.root, image=self.corner_icon, bg="#ffe6ea", borderwidth=0)
             self.icon_label.place(relx=1.0, rely=1.0, anchor="se", x=-10, y=-10)
@@ -129,7 +136,7 @@ class BoilTimerApp:
         food = self.food_var.get()
         path = self.food_images.get(food)
         try:
-            img = Image.open(path).resize((200, 150))
+            img = Image.open(resource_path(path)).resize((200, 150))
             photo = ImageTk.PhotoImage(img)
             self.image_label.config(image=photo)
             self.image_label.image = photo
@@ -171,3 +178,4 @@ class BoilTimerApp:
         self.progress_bar["value"] = 0
         self.start_button.config(state="normal")
         self.stop_button.config(state="disabled")
+
